@@ -4,5 +4,5 @@
 
 
 <div style="text-align: center">
-<img src="pic/spacex.png" width="200" />
+<img src="pic/spacex.PNG" />
 </div>
