@@ -1,0 +1,45 @@
+.feed {
+    flex: 0.8; 
+}
+  
+  .feed__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  
+  @media (max-width: 700px) {
+    .feed {
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .feed__cards {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 700px) and (max-width: 1024px) {
+    .feed {
+      /* display: grid;
+      align-self: flex-start; */
+    }
+    .feed__cards {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .feed__cards {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .feed__cards {
+      max-width: 1150px;
+    }
+  }
+  

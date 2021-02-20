@@ -1,0 +1,67 @@
+.rocketCard {
+    background-color:black;
+    margin: 10px 2px 2px 10px;
+    padding: 10px 5px;
+    width: 23%;
+    box-sizing: border-box;
+    border: 2px solid hsl(0, 5%, 17%);
+  }
+  
+  .rocketCard img {
+    width: 85%;
+    object-fit: contain;
+    margin-bottom: 8px;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rocketCard h4 {
+    height: 30px;
+    font-size: 15px;
+    padding: 0 15px;
+    color: rgb(89, 89, 194);
+  }
+  .rocket__info {
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+  .rocket__info span {
+    color: rgb(89, 89, 194);
+  }
+  
+  @media (max-width: 700px) {
+    .rocketCard {
+      width: 100%;
+      height: initial;
+      margin: 10px 0;
+      padding: 10px 0;
+    }
+    .rocketCard img {
+      width: 95%;
+    }
+    .rocketCard h4 {
+      font-size: 25px;
+    }
+    .rocket__info {
+      font-size: 25px;
+    }
+  }
+  
+  @media (min-width: 700px) and (max-width: 1024px) {
+    .rocketCard {
+      font-size: 14px;
+      width: 46.5%;
+      box-sizing: border-box;
+      margin: 10px 5px 5px 10px;
+      height: initial;
+    }
+    .rocketCard img {
+      width: 95%;
+    }
+    .rocketCard h4 {
+      font-size: 14px;
+    }
+  }
+  

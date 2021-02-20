@@ -1,0 +1,79 @@
+.sidebar {
+    background-color: black;
+    flex: 0.2;
+    padding: 10px;
+    margin: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+    color: white;
+    border: 2px solid hsl(0, 5%, 17%);
+  }
+  .sidebar h3 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  .sidebar h4 {
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1.5px solid lightgray;
+  }
+  
+  .sidebar__filterYears {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+  
+  .sidebar__launchButtons,
+  .sidebar__landingButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidebar__launchButtons button,
+  .sidebar__landingButtons button {
+    margin: 10px 30px;
+    background-color: rgba(32, 31, 31, 0.5);
+    color: white;
+    font-weight: 400;
+    border: none;
+    width: 50px;
+    border-radius: 3px;
+    padding: 10px;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    /* min-width: 50px; */
+  }
+  
+  .sidebar__launchButtons button:hover,
+  .sidebar__landingButtons button:hover {
+    color: rgba(20, 20, 20, 0.8);
+    background-color: #e6e6e6;
+    transition: all 500ms;
+  }
+  
+  .selected {
+    background-color: #e6e6e6 !important;
+    color: rgba(20, 20, 20, 0.8) !important;
+    border: none !important;
+  }
+  
+  @media (max-width: 700px) {
+    .sidebar {
+      text-align: center;
+    }
+  
+    .sidebar__launchButtons button,
+    .sidebar__landingButtons button {
+      width: 100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  

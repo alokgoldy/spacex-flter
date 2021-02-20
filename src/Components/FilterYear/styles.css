@@ -1,0 +1,31 @@
+.filterYear button {
+    border: none;
+    margin: 10px 30px;
+    background-color: rgba(32, 31, 31, 0.5);
+    color: white;
+    width: 50px;
+    border-radius: 3px;
+    padding: 5px;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+  }
+  
+  .filterYear button:hover {
+    transform: scale(1.07);
+  }
+  
+  .selected {
+    background-color: #e6e6e6 !important;
+    color: rgba(20, 20, 20, 0.8) !important;
+    border: none !important;
+  }
+  
+  @media (max-width: 700px) {
+    .filterYear {
+      width: 50%;
+    }
+    .filterYear button {
+      width: 100px;
+    }
+  }
+  
