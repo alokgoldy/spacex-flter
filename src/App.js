@@ -17,33 +17,38 @@ function App() {
       setData(response.data);
     }); 
   }
+  
+
   useEffect(() => {
     fetchData();
   }, []);
 
   useEffect(() => {
+    const getAPI_URL = () => {
+      let url = API_URL;
+      if(yearFilter){
+        url += "&launch_year=" + yearFilter;
+      }
+      if(launchSuccessFilter){
+        url += "&launch_success=" + launchSuccessFilter;
+      }
+      if(landSuccessFilter){
+        url += "&land_success=" + landSuccessFilter;
+      }
+      return url;
+    }
+    
+    const updateData = async () => {
+      let filterAPI = getAPI_URL();
+      await axios.get(filterAPI)
+      .then((response) => setData(response.data));
+    }
     updateData();
-  }, [yearFilter, launchSuccessFilter, landSuccessFilter]);
+  }, [yearFilter,launchSuccessFilter, landSuccessFilter]);
 
-  const getAPI_URL = () => {
-    let url = API_URL;
-    if(yearFilter){
-      url += "&launch_year=" + yearFilter;
-    }
-    if(launchSuccessFilter){
-      url += "&launch_success=" + launchSuccessFilter;
-    }
-    if(landSuccessFilter){
-      url += "&land_success=" + landSuccessFilter;
-    }
-    return url;
-  }
+  
 
-  const updateData = async () => {
-    let filterAPI = getAPI_URL();
-    await axios.get(filterAPI)
-    .then((response) => setData(response.data));
-  }
+  
 
   const yearFilterHandler = (year) => {
     if (year === yearFilter) {
