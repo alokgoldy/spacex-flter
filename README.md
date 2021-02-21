@@ -14,7 +14,7 @@
 
 - Run this command 
 - `git clone https://github.com/alokgoldy/spacex-flter.git`
-- `cd spacex-filter`
+- `cd spacex-flter`
 - `npm start`
 
 ## Tech Stack
