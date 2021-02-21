@@ -2,7 +2,18 @@
 
 ## Preview
 
-
+### link : https://keen-tereshkova-7d1d8c.netlify.app/
 <div style="text-align: center">
 <img src="pic/spacex.PNG" />
 </div>
+
+## Run Locally
+
+- Run this command `git clone https://github.com/alokgoldy/spacex-flter.git`
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- Javascript +ES6
+- React Js
