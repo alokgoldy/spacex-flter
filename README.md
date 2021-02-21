@@ -12,7 +12,10 @@
 
 ## Run Locally
 
-- Run this command `git clone https://github.com/alokgoldy/spacex-flter.git`
+- Run this command 
+- `git clone https://github.com/alokgoldy/spacex-flter.git`
+- `cd spacex-filter`
+- `npm start`
 
 ## Tech Stack
 
